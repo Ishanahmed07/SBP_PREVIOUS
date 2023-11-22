@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fellowship</title>
+    <link rel="stylesheet" href="style_fellowship.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- Button to open the side navigation bar -->
+    <div><span class="openbtn" onclick="toggleNavOn()">&#9776;<img class="logoimageO" src="tifr-logo-blue.png"
+                alt="LOGO....."></span></div>
+
+    <!-- Side navigation bar -->
+    <div class="sidenav" id="mySidenav">
+        <div class="clo">
+            <span>
+                <img class="logoimageC" src="tifr-logo-blue.png" alt="LOGO.....">
+                <span class="closebtn" onclick="toggleNavOff()">&#9776;</span>
+            </span>
+        </div>
+
+        <div class="box1">
+            <a href="index.html" id="home">SBP Home</a>
+            <div class="links">
+                <a href="evaluation.html" id="evaluation">Evaluation</a>
+                <a href="Course_Waiver.html" id="course_waiver">Course Waiver</a>
+                <a href="projects.html" id="projects">Projects</a>
+                <a href="reading_courses.html" id="reading_courses">Reading Courses</a>
+            </div>
+        </div>
+
+        <div class="links">
+            <div class="box2">
+                <a href="">Registration & TMC</a>
+                <a href="synopsis_submission.html" id="synopsis_submission">Synopsis
+                    submission</a>
+                <a href="open_seminar.html" id="open_seminar">Open Seminar</a>
+                <a href="thesis_submission.html" id="thesis_submission">Thesis
+                    Submission</a>
+                <a href="thesis_defence.html" id="thesis_defence">Thesis
+                    Defence</a>
+                <a href="award.html" id="award">Award
+                    of
+                    Ph. D.</a>
+            </div>
+        </div>
+
+        <div class="links">
+            <div class="box3">
+                <a href="http://www.tifr.res.in/~sbp/indexx.php" id="old_sbp_page">Old SBP Page</a>
+            </div>
+        </div>
+
+        <div class="box4">
+            <a href="http://www.tifr.res.in/~gsoffice/" id="university">University Cell</a>
+            <div class="links">
+                <a href="subjectboard.html" id="subjectboard">Subject Board</a>
+                <a href="allotmentofguide.html " id="allotmentofguide">Allotment of
+                    Guide</a>
+                <a href="departmentchange.html" id="departmentchange">Department Change</a>
+                <a href="exit.html" id="exit">Exit Options</a>
+            </div>
+        </div>
+
+        <div class="links">
+            <div class="box5">
+                <a href="academic_calendar.html" id="academic">Academic Calender</a>
+                <a href="" id="current_course">Current Courses</a>
+                <a href="" id="earlier_courses">Earlier Courses</a>
+            </div>
+        </div>
+        <div class="links">
+            <div class="box6">
+                <a href="fellowship.html" id="fellowship">Fellowship</a>
+                <a href="" id="contingency_grant">Contingency Grant</a>
+                <a href="gradersgrant.html" id="gradersgrant">Grader's Grant</a>
+
+                <a href="https://www.tifr.res.in/~sbp/new2015/fees.htm" id="university_fee">University Fees</a>
+            </div>
+        </div>
+        <div class="links">
+            <div class="box7">
+                <a href="faq.html" id="faq">FAQ</a>
+            </div>
+        </div>
+        <!-- <div class="box1">
+            <a href="index.html" id="home">SBP Home</a>
+            <div class="links">
+                <a href="evaluation.html" id="evaluation">Evaluation</a>
+                <a href="Course_Waiver.html" id="course">Course
+                    Waiver</a>
+                <a href="https://www.tifr.res.in/~sbp/new2015/projects.htm" target="_blank">Projects</a>
+                <a href="https://www.tifr.res.in/~sbp/new2015/reading.htm" target="_blank">Reading Courses</a>
+            </div>
+        </div>
+
+        <div class="links">
+            <div class="box2">
+                <a href="https://www.tifr.res.in/~gsoffice/Acad_Procedures/procedureall.htm"
+                    target="_blank">Registration & TMC</a>
+                <a href="https://www.tifr.res.in/~gsoffice/Acad_Procedures/procedureall.htm" target="_blank">Synopsis
+                    submission</a>
+                <a href="https://www.tifr.res.in/~sbp/new2015/seminar.htm" target="_blank">Open Seminar</a>
+                <a href="https://www.tifr.res.in/~gsoffice/Acad_Procedures/procedureall.htm" target="_blank">Thesis
+                    Submission</a>
+                <a href="https://www.tifr.res.in/~gsoffice/Acad_Procedures/procedureall.htm" target="_blank">Thesis
+                    Defence</a>
+                <a href="https://www.tifr.res.in/~gsoffice/Acad_Procedures/procedureall.htm" target="_blank">Award of
+                    Ph. D.</a>
+            </div>
+        </div>
+
+        <div class="links">
+            <div class="box3">
+                <a href="http://www.tifr.res.in/~sbp/indexx.php" target="_blank">Old SBP Page</a>
+            </div>
+        </div>
+
+        <div class="box4">
+            <a href="http://www.tifr.res.in/~gsoffice/" id="home" target="_blank">University Cell</a>
+            <div class="links">
+                <a href="https://www.tifr.res.in/~sbp/new2015/sbpmembers.htm" target="_blank">Subject Board</a>
+                <a href="https://www.tifr.res.in/~sbp/new2015/guide.htm" target="_blank">Allotment of Guide</a>
+                <a href="https://www.tifr.res.in/~sbp/new2015/deptchange.htm" target="_blank">Department Change</a>
+                <a href="https://www.tifr.res.in/~sbp/new2015/exitoption.htm" target="_blank">Exit Options</a>
+            </div>
+        </div>
+
+        <div class="links">
+            <div class="box5">
+                <a href="https://www.tifr.res.in/~sbp/new2015/calendar.htm" target="_blank">Academic Calender</a>
+                <a href="https://www.tifr.res.in/~sbp/new2015/timetable.htm" target="_blank">Current Courses</a>
+                <a href="https://www.tifr.res.in/~sbp/new2015/earlier.htm" target="_blank">Earlier Courses</a>
+            </div>
+        </div>
+        <div class="links">
+            <div class="box6">
+                <a href="fellowship.html" id="fellowship">Fellowship</a>
+                <a href="https://www.tifr.res.in/~sbp/new2015/contingency.htm" target="_blank">Contingency Grant</a>
+                <a href="https://www.tifr.res.in/~sbp/new2015/grader.htm" target="_blank">Grader's Grant</a>
+                <a href="https://www.tifr.res.in/~sbp/new2015/fees.htm" target="_blank">University Fees</a>
+            </div>
+        </div>
+        <div class="links">
+            <div class="box7">
+                <a href="https://www.tifr.res.in/~sbp/new2015/FAQ.htm" target="_blank">FAQ</a>
+            </div>
+        </div> -->
+    </div>
+
+    <!-- Page content -->
+    <div class="container">
+        <h1>Fellowship</h1>
+    </div>
+
+    <!-- JavaScript to toggle the navigation bar -->
+    <script>
+        // JavaScript to toggle the navigation bar
+        window.onload = function () {
+            var sidebarState = localStorage.getItem('sidebarState');
+            if (sidebarState === 'open') {
+                toggleNavOn(); // Open the side navbar if it was open on the previous page
+            }
+        };
+
+
+        function toggleNavOff() {
+            var sidebar = document.getElementById('mySidenav');
+            sidebar.style.width = "200px";
+            sidebar.classList.remove('active');
+            localStorage.setItem('sidebarState', 'closed'); // Store the closed state in local storage
+        }
+    </script>
+</body>
+
+</html>

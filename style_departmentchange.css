@@ -1,0 +1,372 @@
+/* Add some basic styling to the page */
+body {
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0;
+  /* background-color: #a2ebff; */
+}
+
+/* Style the navigation bar */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  /* Increase the width for larger screens */
+  position: fixed;
+  top: 0;
+  /* left: -250px; */
+  /* Initially hidden */
+  background-color: #4480e1;
+  /* background-color: #5f99dc; */
+  overflow-x: hidden;
+  transition: 0.3s;
+  /* padding-top: 1px; */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidenav a {
+  padding: 10px 0px 0px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  display: block;
+  transition: 0.2s;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.sidenav a:hover {
+  background-color: #1b3baf;
+}
+
+/* Style the content */
+.container {
+  margin-left: 0;
+  /* Adjust margin for larger screens */
+  padding: 50px;
+}
+
+/* Button to open the side navigation bar */
+.openbtn {
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.logoimageO {
+  position: fixed;
+  height: 35px;
+  margin-left: 20px;
+  margin-top: -5px;
+  margin-right: 20px;
+}
+
+/* Expand the navigation bar when the button is clicked */
+.sidenav.active {
+  left: 0;
+}
+
+.closebtn {
+  cursor: pointer;
+  text-align: right;
+  color: white;
+  margin-bottom: 100px;
+  padding-left: 70px;
+  font-size: 25px;
+}
+
+.logoimageC {
+  height: 35px;
+}
+
+#home {
+  text-align: center;
+  padding-left: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .sidenav {
+    width: 40%;
+    /* Full width for small screens */
+    left: -100%;
+    /* Initially hidden */
+  }
+
+  .sidenav.active {
+    left: 0;
+  }
+
+  .container {
+    margin-left: 0;
+    /* Remove margin for small screens */
+  }
+
+  .gimage #gradeimage {
+    width: 100%;
+    height: 100%;
+    /* object-fit: fill; */
+  }
+}
+
+/* CSS for the navbar */
+nav {
+  background-color: #333;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.navbar a:hover {
+  color: #1b3baf;
+}
+
+.links a {
+  padding-top: 4px;
+  padding-left: 10px;
+  padding-bottom: 4px;
+}
+
+.links {
+  border-radius: 10px;
+  background-color: #5f99dc;
+}
+
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7 {
+  margin-top: 15px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.clo {
+  position: sticky;
+  top: 0;
+  background-color: #5f99dc;
+  z-index: 100;
+}
+
+#departmentchange {
+  background-color: black;
+  border-radius: 15px;
+  border: 2px white solid;
+}
+
+#gradeimage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#gradeimage {
+  padding-top: 3px;
+  padding-bottom: 15px;
+}
+
+.fimage {
+  display: flex;
+  justify-content: center;
+}
+
+.container p,
+div {
+  text-align: justify;
+  font-size: large;
+}
+
+.container h3 a {
+  text-align: center;
+}
+
+.backbtn {
+  display: flex;
+  justify-content: center;
+}
+
+/* Adjust content margin when the navbar is open */
+/* .sidenav.active + .container {
+  margin-left: 155px; /* Adjust this value to match the width of your navbar 
+} */
+
+/* Adjust content margin when the navbar is closed */
+.sidenav:not(.active) + .container {
+  margin-left: 175px;
+}
+
+/* Style the table within the .container */
+.container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.container th,
+.container td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.container th {
+  background-color: #f2f2f2;
+}
+
+.container th:first-child,
+.container td:first-child {
+  width: 30%;
+}
+
+.container ol {
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+}
+
+.container li {
+  list-style-type: decimal;
+  margin-bottom: 5px;
+}
+
+/* Make the table responsive for smaller screens */
+@media screen and (max-width: 600px) {
+  .container table {
+    overflow-x: auto;
+    display: block;
+    width: auto;
+  }
+
+  .container th,
+  .container td {
+    white-space: nowrap;
+  }
+
+  .container {
+    padding-left: 20px;
+  }
+}
+
+/* Style the container for the table */
+.container .c1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Style the table within .c1 */
+.container .c1 table {
+  width: 100%;
+  max-width: 800px; /* Adjust the maximum width as needed */
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 16px;
+  overflow-x: auto; /*
+}
+
+/* Style table header cells (th) */
+  .container .c1 th {
+    background-color: #ddd;
+    color: #000000;
+    padding: 10px;
+    text-align: left;
+  }
+
+  /* Style table data cells (td) */
+  .container .c1 td {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+
+  /* Alternate row background color */
+  .container .c1 tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  /* Style the section heading within .c1 */
+  .container .c1 h2 {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  /* Style the section paragraph within .c1 */
+  .container .c1 p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  /* Responsive styles for .c1 table */
+  @media screen and (max-width: 600px) {
+    .container .c1 table {
+      /* Remove width and enable horizontal scrolling for small screens */
+      width: auto;
+      overflow-x: auto;
+      display: block;
+    }
+
+    .container .c1 th,
+    .container .c1 td {
+      white-space: nowrap;
+    }
+
+    .container .c1 {
+      padding-left: 20px;
+    }
+  }
+}
+
+.backbtn a {
+  text-decoration: none;
+  color: black;
+  background-color: burlywood;
+  padding: 10px;
+  border-radius: 45px;
+  font-size: small;
+}
+
+.backbtn a:hover {
+  background-color: rgb(215,  165,  100);
+}
+
+.sidenav.active + .header {
+  margin-left: -100px;
+}
+.sidenav:not(.active) + .header {
+  margin-left: 0px;
+}
+
+/* Adjust content margin when the navbar is open */
+.sidenav.active + .containerhead {
+  margin-left: 200px;
+}
+.sidenav:not(.active) + .containerhead {
+  margin-left: 0;
+}

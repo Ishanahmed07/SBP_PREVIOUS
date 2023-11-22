@@ -1,0 +1,209 @@
+/* Add some basic styling to the page */
+body {
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0;
+  /* background-color: #a2ebff; */
+}
+
+/* Style the navigation bar */
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  /* Increase the width for larger screens */
+  position: fixed;
+  top: 0;
+  /* left: -250px; */
+  /* Initiallyxz hidden */
+  background-color: #4480e1;
+  /* background-color: #5f99dc; */
+  overflow-x: hidden;
+  transition: 0.3s;
+  /* padding-top: 1px; */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+/* 
+a:active{
+    color: #1b3baf;
+} */
+
+.sidenav a {
+  padding: 10px 0px 0px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  display: block;
+  transition: 0.2s;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.sidenav a:hover {
+  background-color: #1b3baf;
+}
+
+/* Style the content */
+.container {
+  margin-left: 0;
+  /* Adjust margin for larger screens */
+  padding: 50px;
+}
+
+/* Button to open the side navigation bar */
+.openbtn {
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.logoimageO {
+  position: fixed;
+  /* padding-left: 30px; */
+  height: 35px;
+  margin-left: 20px;
+  /* Adjust the margin for smaller screens */
+  margin-top: -5px;
+  margin-right: 20px;
+  /* Adjust the margin for smaller screens */
+}
+
+/* Expand the navigation bar when the button is clicked */
+.sidenav.active {
+  left: 0;
+}
+
+.closebtn {
+  cursor: pointer;
+  text-align: right;
+  color: white;
+  margin-bottom: 100px;
+  padding-left: 70px;
+  font-size: 25px;
+}
+
+.logoimageC {
+  height: 35px;
+  /* margin-top: 11px; */
+}
+
+#home {
+  text-align: center;
+  padding-left: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .sidenav {
+    width: 50%;
+    /* Full width for small screens */
+    left: -100%;
+    /* Initially hidden */
+  }
+
+  .sidenav.active {
+    left: 0;
+  }
+
+  .container {
+    margin-left: 0;
+    /* Remove margin for small screens */
+  }
+}
+
+/* CSS for the navbar */
+nav {
+  background-color: #333;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+/* #links h2 {
+    margin: 0px;
+} */
+
+.navbar a:hover {
+  color: #1b3baf;
+}
+
+.links a {
+  padding-top: 4px;
+  padding-left: 10px;
+  padding-bottom: 4px;
+}
+.links {
+  border-radius: 10px;
+  background-color: #5f99dc;
+  /* padding-top: 50px; */
+  /* display: none; */
+}
+
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7 {
+  margin-top: 15px;
+}
+/* 
+#home:hover+div.links{
+    display: block;
+} */
+
+h1 {
+  text-align: center;
+}
+
+.clo {
+  position: sticky;
+  top: 0; /* Stick to the top of the sidenav container */
+  background-color: #5f99dc; /* Background color for the sticky header */
+  z-index: 100; /* Ensure it's on top of other content */
+  /* Add other styles as needed for your sticky header */
+}
+
+#fellowship {
+  background-color: black;
+  border-radius: 15px;
+  border: 2px white solid;
+}
+
+.backbtn a {
+  text-decoration: none;
+  color: black;
+  background-color: burlywood;
+  padding: 10px;
+  border-radius: 45px;
+  font-size: small;
+}
+
+.backbtn a:hover {
+  background-color: rgb(215,  165,  100);
+}
+
+.sidenav:not(.active) + .container {
+  margin-left: 175px;
+}

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading Courses</title>
+    <link rel="stylesheet" href="style_faq.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+    </nav> -->
+    <!-- Button to open the side navigation bar -->
+    <div><span class="openbtn" onclick="toggleNavOn()">&#9776;<img class="logoimageO" src="tifr-logo-blue.png"
+                alt="LOGO....."></span></div>
+
+    <!-- Side navigation bar -->
+    <div class="sidenav" id="mySidenav">
+        <div class="clo">
+            <span>
+                <img class="logoimageC" src="tifr-logo-blue.png" alt="LOGO.....">
+                <span class="closebtn" onclick="toggleNavOff()">&#9776;</span>
+            </span>
+        </div>
+        <div class="box1">
+            <a href="index.html" id="home">SBP Home</a>
+            <div class="links">
+                <a href="evaluation.html" id="evaluation">Evaluation</a>
+                <a href="Course_Waiver.html" id="course_waiver">Course Waiver</a>
+                <a href="projects.html" id="projects">Projects</a>
+                <a href="reading_courses.html" id="reading_courses">Reading Courses</a>
+            </div>
+        </div>
+
+        <div class="links">
+            <div class="box2">
+                <a href="">Registration & TMC</a>
+                <a href="synopsis_submission.html" id="synopsis_submission">Synopsis
+                    submission</a>
+                <a href="open_seminar.html" id="open_seminar">Open Seminar</a>
+                <a href="thesis_submission.html" id="thesis_submission">Thesis
+                    Submission</a>
+                <a href="thesis_defence.html" id="thesis_defence">Thesis
+                    Defence</a>
+                <a href="award.html" id="award">Award
+                    of
+                    Ph. D.</a>
+            </div>
+        </div>
+
+        <div class="links">
+            <div class="box3">
+                <a href="http://www.tifr.res.in/~sbp/indexx.php" id="old_sbp_page">Old SBP Page</a>
+            </div>
+        </div>
+
+        <div class="box4">
+            <a href="http://www.tifr.res.in/~gsoffice/" id="university">University Cell</a>
+            <div class="links">
+                <a href="subjectboard.html" id="subjectboard">Subject Board</a>
+                <a href="allotmentofguide.html " id="allotmentofguide">Allotment of
+                    Guide</a>
+                <a href="departmentchange.html" id="departmentchange">Department Change</a>
+                <a href="exit.html" id="exit">Exit Options</a>
+            </div>
+        </div>
+
+        <div class="links">
+            <div class="box5">
+                <a href="academic_calendar.html" id="academic">Academic Calender</a>
+                <a href="" id="current_course">Current Courses</a>
+                <a href="" id="earlier_courses">Earlier Courses</a>
+            </div>
+        </div>
+        <div class="links">
+            <div class="box6">
+                <a href="fellowship.html" id="fellowship">Fellowship</a>
+                <a href="" id="contingency_grant">Contingency Grant</a>
+                <a href="gradersgrant.html" id="gradersgrant">Grader's Grant</a>
+
+                <a href="https://www.tifr.res.in/~sbp/new2015/fees.htm" id="university_fee">University Fees</a>
+            </div>
+        </div>
+        <div class="links">
+            <div class="box7">
+                <a href="faq.html" id="faq">FAQ</a>
+            </div>
+        </div>
+        <!-- <div class="box1">
+            <a href="index.html" id="home">SBP Home</a>
+            <div class="links">
+                <a href="evaluation.html" id="evaluation">Evaluation</a>
+                <a href="Course_Waiver.html" id="course">Course
+                    Waiver</a>
+                <a href="projects.html">Projects</a>
+                <a href="reading_courses.html" id="reading_courses">Reading Courses</a>
+            </div>
+        </div>
+
+        <div class="links">
+            <div class="box2">
+                <a href="">Registration & TMC</a>
+                <a href="synopsis_submission.html">Synopsis
+                    submission</a>
+                <a href="open_seminar.html">Open Seminar</a>
+                <a href="thesis_submission.html">Thesis
+                    Submission</a>
+                <a href="thesis_defence.html">Thesis
+                    Defence</a>
+                <a href="award.html">Award
+                    of
+                    Ph. D.</a>
+            </div>
+        </div>
+
+        <div class="links">
+            <div class="box3">
+                <a href="http://www.tifr.res.in/~sbp/indexx.php" target="_blank">Old SBP Page</a>
+            </div>
+        </div>
+
+        <div class="box4">
+            <a href="http://www.tifr.res.in/~gsoffice/" id="home" target="_blank">University Cell</a>
+            <div class="links">
+                <a href="subjectboard.html">Subject Board</a>
+                <a href="allotmentofguide.html " id="allotmentofguide">Allotment of Guide</a>
+                <a href="departmentchange.html" id="departmentchange">Department Change</a>
+                <a href="https://www.tifr.res.in/~sbp/new2015/exitoption.htm" target="_blank">Exit Options</a>
+            </div>
+        </div>
+
+        <div class="links">
+            <div class="box5">
+                <a href="https://www.tifr.res.in/~sbp/new2015/calendar.htm" target="_blank">Academic Calender</a>
+                <a href="https://www.tifr.res.in/~sbp/new2015/timetable.htm" target="_blank">Current Courses</a>
+                <a href="https://www.tifr.res.in/~sbp/new2015/earlier.htm" target="_blank">Earlier Courses</a>
+            </div>
+        </div>
+        <div class="links">
+            <div class="box6">
+                <a href="https://www.tifr.res.in/~sbp/new2015/Fellowship.htm" target="_blank">Fellowship</a>
+                <a href="https://www.tifr.res.in/~sbp/new2015/contingency.htm" target="_blank">Contingency Grant</a>
+                <a href="https://www.tifr.res.in/~sbp/new2015/grader.htm" target="_blank">Grader's Grant</a>
+                <a href="https://www.tifr.res.in/~sbp/new2015/fees.htm" target="_blank">University Fees</a>
+            </div>
+        </div>
+        <div class="links">
+            <div class="box7">
+                <a href="faq.html" id="faq">FAQ</a>
+            </div>
+        </div> -->
+    </div>
+
+    <!-- Page content -->
+    <div class="container">
+
+        <div class="containerhead">
+            <!-- <div class="header"> -->
+            <span class="openbtn" onclick="toggleNavOn()">&#9776;
+                <img class="logoimageO" src="tifr-logo-blue.png" alt="LOGO"></span>
+
+            <!-- </div> -->
+            <!-- <div class="sbp">
+                Subject Board Of Physics
+            </div> -->
+
+        </div>
+        <div class="content">
+
+            <h1>FAQ</h1>
+            <p><b>Q. What are the degrees which can be awarded by TIFR?</b><br><br>TIFR is a Deemed University under the
+                UGC, with the mandate to award M.Sc. and Ph.D. degrees only. <br>In special cases, TIFR may also
+                award
+                the M.Phil. degree. <br>No other degrees (e.g. M.S., M.Tech., D.Sc.) can be awarded by TIFR.
+            </p>
+            <p><b>Q. Can I join TIFR solely for an M.Sc. or M.Phil. degree?</b><br><br>No, students are admitted only
+                for coursework and research leading to Ph.D. degrees.<br>The M.Sc. degree is awarded, after due
+                coursework, to students who do not have it at the time of joining so that their
+                careers retain continuity in the matter of degrees. It can also be an exit option – after three years –
+                for students who
+                are unable, for various reasons, to carry on with research in TIFR.<br>The M.Phil degree is only an exit
+                option for students who already have (or are eligible to have) an M.Sc. degree, but
+                are unable, for various reasons, to carry on with research in TIFR.
+            </p>
+            <p><b>Q. Can I defer the date of my joining TIFR?</b><br><br>This is not normally permitted. However, in
+                case of serious medical or other emergencies, a student may be allowed to
+                defer joining by one semester.<br>If a student does not join within one week from the stipulated date,
+                his/her admission will stand cancelled.
+            </p>
+            <p><b>Q. Can I change my assigned Department after joining TIFR?</b><br><br>This is permitted to a limited
+                number of students who perform well in the coursework. <a href="department_change.html">Check here for
+                    details.</a>
+            </p>
+            <p><b>Q. If I cannot find a Supervisor in my allotted Department after the
+
+                    maximum stipulated time, what should I do?</b><br><br>You will have to leave TIFR. Integrated
+                M.Sc.-Ph.D. students have a choice of leaving with an M.Sc. degree. Ph.D.
+                students have a choice of leaving with an M.Phil. degree. <a href="exit.html">Check here for
+                    details.</a>
+            </p>
+            <p><b>Q. Can I move from the Colaba campus of TIFR to one of the TIFR Centres
+
+                    (NCRA, NCBS, ICTS, TCIS, HBCSE) and vice versa?</b><br><br>It is possible to move from the Colaba
+                campus to one of the TIFR Centres with full transfer of credits, if the Centre in
+                question agrees. Transfer from TIFR Centres to the Colaba campus is not permitted.
+            </p>
+            <p><b>Q. If, mid-way through my Ph.D. work, I wish to change my supervisor, is it
+
+                    permissible?</b><br><br>It is possible, on a case-to-case basis, to change to another supervisor in
+                the same Department, subject to the approval
+                of (i) the new supervisor, (ii) the Department and (iii) the Subject Board. <br>There is no restriction
+                on the number of times such a change is made. Note, however, that no extra time will be given to
+                students who change supervisors.
+            </p>
+            <p><b>Q. If my Ph.D. work is delayed, can I get an extension of Fellowship
+
+                    beyond the allotted time?</b><br><br>In the 6th year for Ph.D. students and the 7th year for
+                Integrated M.Sc.-Ph.D. students, a limited number of students
+                can get half fellowship (but no contingency grant) to finish the Ph.D. work. Any extension beyond this
+                has been strictly
+                forbidden by the Department of Atomic Energy, Government of India, which is our controlling agency. The
+                Subject Board
+                may permit you to finish your work, but without stipend and without accommodation.
+            </p>
+        </div>
+        <div class="backbtn">
+            <p id="back">
+            <h3><a href="https://www.tifr.res.in/">BACK</a></h3>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to toggle the navigation bar
+        document.addEventListener("DOMContentLoaded", function () {
+            var screenWidth = window.innerWidth;
+            var sidebarState = localStorage.getItem("sidebarState");
+
+            if (screenWidth > 768 && sidebarState === "open") {
+                toggleNav(true); // Open the side navbar if it was open on the previous page
+            } else {
+                toggleNav(false); // Close the side navbar if it was closed on the previous page
+            }
+        });
+
+        function toggleNav(open) {
+            var sidebar = document.getElementById("mySidenav");
+            var container = document.querySelector(".container");
+
+            if (open) {
+                sidebar.style.left = "0px";
+                container.style.marginLeft = "200px";
+                sidebar.classList.add("active");
+            } else {
+                sidebar.style.left = "-200px"; // Adjust the width of the sidebar
+                container.style.marginLeft = "0";
+                sidebar.classList.remove("active");
+            }
+
+            // Set the state in local storage
+            localStorage.setItem("sidebarState", open ? "open" : "closed");
+        }
+
+        function toggleNavOn() {
+            toggleNav(true); // Open the sidebar
+        }
+
+        function toggleNavOff() {
+            toggleNav(false); // Close the sidebar
+        }
+
+    </script>
+</body>
+
+</html>
